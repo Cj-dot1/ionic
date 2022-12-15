@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>DropZone</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <div class="container ion-text-center"> 
+    <br>
+    <center>
+    <img src="assets/logo.png">
+  </center>
+</div>
+ 
+  <ion-card>
+    <ion-card-content>
+      <ion-label><center>Best Online Application to buy computer parts from certified vendor store.</center></ion-label>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="products ion-text-center">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>OUR PRODUCTS</ion-card-subtitle>
+        <ion-card-title>Click to see the products</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="container-card">
+        <img src="assets/products/pc2.webp">
+        <ion-button (click)="presentPopover1(eve)" >
+          DESKTOP PC
+        </ion-button>
+        <img src="assets/products/laptop1.webp">
+        <ion-button (click)="presentPopover2(eve)" >
+          LAPTOP
+        </ion-button>
+        <img src="assets/products/peri1.webp">
+        <ion-button (click)="presentPopover3(eve)" >
+          PERIPHERALS
+        </ion-button>
+      </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+</ion-content>
